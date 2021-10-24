@@ -5,8 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-Character.create(name: "Diluc", vision: "pyro", rarity: 5)
+path = "app/assets/images/charactericons/"
+Character.create(name: "Diluc", vision: "pyro", rarity: 5).image.attach(io: File.open("#{path}diluc.png"), filename: 'diluc.png')
 Character.create(name: "Yoimiya", vision: "pyro", rarity: 5)
 Character.create(name: "Hu Tao", vision: "pyro", rarity: 5)
 Character.create(name: "Klee", vision: "pyro", rarity: 5)
