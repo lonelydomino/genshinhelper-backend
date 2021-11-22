@@ -65,9 +65,19 @@ Character.create(name: "Mona", vision: "hydro", rarity: 5).image.attach(io: File
 
 
 
-domain_of_forgery = Domain.create(name: "Domain of Forgery")
+city_of_reflections = Domain.create(name: "City of Reflections")
+thundercloud_altar = Domain.create(name: "Thundercloud Altar")
 
-domain_of_forgery.items << Item.create(name: "Divine Body from Guyun", day1: "Monday", day2: "Thursday", day3: "Sunday")
-domain_of_forgery.items << Item.create(name: "Relic from Guyun", day1: "Monday", day2: "Thursday", day3: "Sunday")
-domain_of_forgery.items << Item.create(name: "Lustrous Stone from Guyun", day1: "Monday", day2: "Thursday", day3: "Sunday")
-domain_of_forgery.items << Item.create(name: "Luminous Sands from Guyun", day1: "Monday", day2: "Thursday", day3: "Sunday")
+
+
+city_of_reflections.items << Item.create(name:"Tile of Decarabian's Tower", days: ["Monday", "Thursday", "Sunday"], rarity: "green")
+city_of_reflections.items << Item.create(name:"Debris of Decarabian's City", days: ["Monday", "Thursday", "Sunday"], rarity: "blue")
+city_of_reflections.items << Item.create(name:"Fragment of Decarabian's Epic", days: ["Monday", "Thursday", "Sunday"], rarity: "purple")
+city_of_reflections.items << Item.create(name:"Scattered Piece of Decarabian's Dream", days: ["Monday", "Thursday", "Sunday"], rarity: "gold")
+
+
+thundercloud_altar.items << Item.create(name: "Divine Body from Guyun", days: ["Monday", "Thursday", "Sunday"], rarity: "gold")
+thundercloud_altar.items << Item.create(name: "Relic from Guyun", days: ["Monday", "Thursday", "Sunday"], rarity: "purple")
+thundercloud_altar.items << Item.create(name: "Lustrous Stone from Guyun", days: ["Monday", "Thursday", "Sunday"], rarity: "blue")
+thundercloud_altar.items << Item.create(name: "Luminous Sands from Guyun", days:["Monday", "Thursday", "Sunday"], rarity: "green")
+
