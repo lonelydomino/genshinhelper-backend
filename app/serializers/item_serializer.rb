@@ -1,4 +1,4 @@
 class ItemSerializer < ActiveModel::Serializer
-  attributes :id, :name, :day1, :day2, :day3
+  attributes :id, :name, :days
   belongs_to :domain
 end
